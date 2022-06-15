@@ -38,7 +38,7 @@ sshagent(['923ed0a7-fd93-420d-a682-283ffd7c40ae']) {
 }
 }
 */
-}catch(e){
+}catch (e) {
 currentBuild.result = "FAILED
   throw e
 }
