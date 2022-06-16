@@ -11,7 +11,7 @@ echo "Node name is: ${env.NODE_NAME}"
 echo "Bulid number is: ${env.BULID_NUMBER}"
 
 
-Try{
+try{
 
 sendslackNotifications('STARTED')
 
@@ -42,8 +42,7 @@ sshagent(['923ed0a7-fd93-420d-a682-283ffd7c40ae']) {
 }
 }
 */
-}
-catch(e){
+}catch(e){
 currentBuild.result = "FAILED"
   throw e
 }
