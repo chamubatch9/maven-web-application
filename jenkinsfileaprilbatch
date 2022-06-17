@@ -51,7 +51,7 @@ sh "${mavenHome}/bin/mvn clean package"
 }
 
 stage('TriggerDownstreamJob'){
-build job: 'pipelinescriptwithbulidparameters'
+build job: 'pipelinescriptwithbuildparameters'
 }
 
 /*
